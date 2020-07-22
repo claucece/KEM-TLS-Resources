@@ -1,1 +1,31 @@
 # Delegated Credentials
+
+## Strategy
+
+There are two different implementations of Delegated Credentials over [TLS Tris](https://github.com/cloudflare/tls-tris):
+
+* https://github.com/cloudflare/tls-tris/pull/32
+* https://github.com/cloudflare/tls-tris/pull/95
+
+While the simplicity of the first is nicer, the second one takes more thoughts
+into account. A hybrid from both of them might be the best case to implement.
+
+Either way, this will mean that we need to modify the `conn.go`, `common.go`,
+`generate_cert.go`, `handshake_client.go`, `handshake_messages.go`,
+`handshake_server.go`, and perhaps `key_agreement.go`.
+
+On `generate_cert.go`, we should add a flag (bool) called `isDC` that determines
+is DC will be used. This will mean that we need to add to x509.Certificate a
+`isDC` bool, and add something like `KeyUsageDelegatedCredentials` to KeyUsage.
+Let's see if this is possible.
+
+## Critical things to take into account
+
+* DC are only supported for TLS1.3, so the version should always be checked.
+  The way the Golang code establishes the version is coupled with different
+  things, so one should be careful with it.
+
+## Open questions
+
+* Is there a number for IANA 'extensionDelegatedCredential'?
+* Usage x509 extension identifier?
