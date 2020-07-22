@@ -1,5 +1,7 @@
 # Delegated Credentials
 
+As defined in the [draft](https://tools.ietf.org/html/draft-ietf-tls-subcerts-09).
+
 ## Strategy
 
 There are two different implementations of Delegated Credentials over [TLS Tris](https://github.com/cloudflare/tls-tris):
@@ -25,7 +27,9 @@ Let's see if this is possible.
   The way the Golang code establishes the version is coupled with different
   things, so one should be careful with it.
 
-## Open questions
+## Open questions and to add
 
 * Is there a number for IANA 'extensionDelegatedCredential'?
 * Usage x509 extension identifier?
+* The test vectors should be added: https://github.com/tlswg/tls-subcerts/pull/77
+
