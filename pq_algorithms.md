@@ -36,3 +36,9 @@ so we should analyse:
     * [CRYSTALS-DILITHIUM](https://pq-crystals.org/). Official comments [here](https://csrc.nist.gov/CSRC/media/Projects/post-quantum-cryptography/documents/round-2/official-comments/CRYSTALS-DILITHIUM-round2-official-comment.pdf).
     * [FALCON](https://falcon-sign.info/). Official comments [here](https://csrc.nist.gov/CSRC/media/Projects/post-quantum-cryptography/documents/round-2/official-comments/FALCON-round2-official-comment.pdf).
     * [Rainbow](https://sites.google.com/site/jintaiding/nist-papers). Official comments [here](https://csrc.nist.gov/CSRC/media/Projects/post-quantum-cryptography/documents/round-2/official-comments/Rainbow-round2-official-comment.pdf).
+
+## Libraries
+
+* [liboqs](https://openquantumsafe.org/). The library can be found [here in C](https://github.com/open-quantum-safe/liboqs), and [here in Golang](https://github.com/open-quantum-safe/liboqs-go).
+* [pqclean](https://github.com/PQClean/PQClean).
+
