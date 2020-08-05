@@ -29,7 +29,15 @@ Let's see if this is possible.
 
 ## Open questions and to add
 
-* Is there a number for IANA 'extensionDelegatedCredential'?
 * Usage x509 extension identifier?
 * The test vectors should be added: https://github.com/tlswg/tls-subcerts/pull/77
 
+## Comparison
+
+
+| Library     | Draft version implemented | Server auth support | Client auth support | Link                                                  |
+|-------------|---------------------------|---------------------|---------------------|-------------------------------------------------------|
+| BoringSSL   | Seems like 02/03          |     Yes             |     No              | https://boringssl.googlesource.com/boringssl/+/6c1b376e1d502eff365028fe054115f1b46d19b5 |
+| Go Golang   | None                      |     No              |     No              | https://github.com/golang/go/issues/35311                                               |
+| CF Golang   | 09                        |     Yes             |     Yes             | https://github.com/cloudflare/go/issues/26                                              |
+| CF TLS-tris | Seeems like 01/02         |     Yes             |     No              | https://github.com/cloudflare/tls-tris/pull/95                                          |
