@@ -35,10 +35,10 @@ Let's see if this is possible.
 ## Comparison
 
 
-| Library     | Draft version implemented | Server auth support | Client auth support | Link                                           |
-|-------------|---------------------------|---------------------|---------------------|------------------------------------------------|
-| BoringSSL   | Seems like 03             |     Yes             |     No              |  https://bit.ly/3fymIdk                        |
-| Go Golang   | None                      |     No              |     No              | https://github.com/golang/go/issues/35311      |
-| CF Golang   | 09                        |     Yes             |     Yes             | https://github.com/cloudflare/go/issues/26     |
-| CF TLS-tris | Seeems like 01/02         |     Yes             |     No              | https://github.com/cloudflare/tls-tris/pull/95 |
-| Rust TLS    | None                      |     No              |     No              |                                                |
+| Library     | Draft version implemented | Server auth support | Client auth support | Link                                           | Missing |
+|-------------|---------------------------|---------------------|---------------------|------------------------------------------------| Extension ID, client auth, signing and verification on tests, remove some rsa algos |
+| BoringSSL   | Seems like 03             |     Yes             |     No              |  https://bit.ly/3fymIdk                        | |
+| Go Golang   | None                      |     No              |     No              | https://github.com/golang/go/issues/35311      | |
+| CF Golang   | 09                        |     Yes             |     Yes             | https://github.com/cloudflare/go/issues/26     | |
+| CF TLS-tris | Seeems like 01/02         |     Yes             |     No              | https://github.com/cloudflare/tls-tris/pull/95 | |
+| Rust TLS    | None                      |     No              |     No              |                                                | |
